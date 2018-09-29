@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout for a single list item in the list of pets -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif-medium"
+        android:paddingRight="16dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#2B3D4D"
+        android:tooltipText="@string/product_name_tool_text"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+
+    <TextView
+        android:id="@+id/summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:paddingRight="16dp"
+        android:textColor="#AEB6BD"
+        android:tooltipText="@string/price_tool_tip"
+        android:layout_weight="1"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="16dp"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:tooltipText="@string/quantity_tool_text"
+        android:layout_weight="1"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+
+    <Button
+        android:id="@+id/sell_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sell_button_text"
+        android:paddingLeft="16dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+</LinearLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".DetailsActivity"
+    style="@style/DetailsStyle">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/product_name_text_view"
+                style="@style/DetailsStyle"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/product_name"
+                android:hint="@string/product_name"
+                android:paddingLeft="6dp"
+                style="@style/DetailsStyle"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="4dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/BookPrice"
+                style="@style/DetailsStyle"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/book_price"
+                android:hint="@string/BookPrice"
+                android:paddingLeft="6dp"
+                style="@style/DetailsStyle"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/quantity"
+                style="@style/DetailsStyle"
+                />
+            <Button
+                android:id="@+id/plus_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="@string/plus_button"/>
+            <TextView
+                android:id="@+id/quantity"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dp"
+                style="@style/DetailsStyle"/>
+            <Button
+                android:id="@+id/minus_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="@string/minus_button"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/supplier_name"
+                style="@style/DetailsStyle"
+                />
+
+            <TextView
+                android:id="@+id/supplier_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/supplier_name"
+                android:paddingLeft="6dp"
+                style="@style/DetailsStyle"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/supplier_number"
+            style="@style/DetailsStyle"
+            />
+
+        <Button
+            android:id="@+id/contact_supplier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_the_supplier"/>
+    </LinearLayout>
+
+</LinearLayout>
