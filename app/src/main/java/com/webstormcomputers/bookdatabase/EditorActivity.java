@@ -147,12 +147,15 @@ public class EditorActivity extends AppCompatActivity implements
                     break;
                 } else if (TextUtils.isEmpty(bookQuantity)) {
                     Toast.makeText(this, "Please enter a Quantity and try again", Toast.LENGTH_LONG ).show();
+                    break;
                 }
                 else if (TextUtils.isEmpty(supplierName)) {
                     Toast.makeText(this, "Please enter a Supplier Name and try again", Toast.LENGTH_LONG ).show();
+                    break;
                 }
                 else if (TextUtils.isEmpty(supplierPhoneNUmber)) {
                     Toast.makeText(this, "Please enter a Supplier Phone Number and try again", Toast.LENGTH_LONG ).show();
+                    break;
                 }
                 else {
                     saveBook();
